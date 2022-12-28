@@ -3,10 +3,10 @@
 
 module dff_tb;
 
-reg clk = 0, D = 0;
+reg clk = 0, D = 0, rst = 0;
 wire Q;
 
-dff uut(clk, D, Q);
+dff uut(clk, rst, D, Q);
 
 //generate the clock
 always begin
@@ -19,13 +19,17 @@ initial begin
     $dumpvars(0, dff_tb);
 
     D = 0;
-    #30;
+    #5;
     D = 1;
+    #50;
+    D = 1;
+    rst = 1;
     #10;
     D = 0;
     #15;
     D = 1;
-    #25;
+    #30;
+   
     $finish; //to make simulator stop
 end
 
