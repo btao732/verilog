@@ -1,0 +1,135 @@
+$date
+	Thu Dec 29 15:23:01 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module top_tb $end
+$var wire 1 ! stop_d2 $end
+$var wire 4 " count [3:0] $end
+$var reg 1 # clk $end
+$var reg 1 $ rst $end
+$var reg 1 % start $end
+$var reg 1 & stop $end
+$scope module uut $end
+$var wire 1 # clk $end
+$var wire 1 $ rst $end
+$var wire 1 % start $end
+$var wire 1 & stop $end
+$var reg 1 ' cnt_en $end
+$var reg 4 ( count [3:0] $end
+$var reg 1 ) stop_d1 $end
+$var reg 1 ! stop_d2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x)
+bx (
+x'
+0&
+1%
+0$
+0#
+bx "
+x!
+$end
+#10
+1'
+0)
+1#
+#20
+0#
+#25
+1&
+0%
+#30
+0!
+1)
+0'
+1#
+#40
+0#
+#50
+1!
+1#
+#55
+0!
+0)
+b0 "
+b0 (
+1$
+0&
+1%
+#60
+0#
+#70
+1#
+#80
+0#
+#85
+0$
+#90
+1'
+1#
+#100
+0#
+#110
+b1 "
+b1 (
+1#
+#120
+0#
+#130
+b10 "
+b10 (
+1#
+#140
+0#
+#150
+b11 "
+b11 (
+1#
+#160
+0#
+#170
+b100 "
+b100 (
+1#
+#180
+0#
+#190
+b101 "
+b101 (
+1#
+#200
+0#
+#210
+b110 "
+b110 (
+1#
+#220
+0#
+#230
+b111 "
+b111 (
+1#
+#240
+0#
+#250
+b1000 "
+b1000 (
+1#
+#260
+0#
+#270
+b1001 "
+b1001 (
+1#
+#280
+0#
+#285
