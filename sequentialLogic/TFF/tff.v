@@ -5,19 +5,17 @@ module tff (
     Q
 );
 
-input clk, rst;
+input clk, rst, T;
 output reg Q;
 
-always @(posedge(clk)) begin
-   if (T)
-       Q <= 0;
-    else
-       Q <= ~Q;
-end
 
-always @(rst) begin
-    if (!rst) 
-       Q <= 0;
+always @(posedge clk or posedge rst) begin
+    if (rst)
+       Q1 <= 0;
+    else if (T == 1'b0)
+       Q1 <= Q1;
+    else if (T == 1'b1)
+        Q1 <= ~ Q1;
 end
 
 
